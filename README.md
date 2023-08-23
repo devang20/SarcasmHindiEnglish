@@ -26,30 +26,6 @@ These two type of data are used to create four types of embeddings such as Word2
 
 2\. **Training the deep learning models:** We used 70% of total labeled data for training our deep learning models and remaining 30% for testing the models. 10% of training data was used for validation testing. We have tried several deep learning models like LSTM, bidirectional LSTM (Bi-LSTM), attention bidirectional LSTM (attention Bi-LSTM), series CNN and parallel CNN.
 
-**Results**
-
-**Table 1: Accuracies of different embeddings and Deep Learning models on Hinglish-English Dataset**
-
-
-||Word2VEC|FastText|Multilingual BERT|IndicBERT|
-| :-: | :-: | :-: | :-: | :-: |
-|Series CNN|90\.13%|91\.52%|-|-|
-|Parallel CNN|90\.81%|92\.05%|-|-|
-|LSTM|95\.22%|95\.1%|-|-|
-|Bi-LSTM|95\.49%|95\.38%|-|-|
-|Attention Bi-LSTM|95\.78%|95\.1%|96\.7%|97\.25%|
-
-**Table 2: Accuracies of different embeddings and Deep Learning models on Hinglish Dataset**
-
-
-||Word2VEC|FastText|Multilingual BERT|IndicBERT|
-| :-: | :-: | :-: | :-: | :-: |
-|Series CNN|88\.17%|87\.03%|-|-|
-|Parallel CNN|94\.37%|81\.95%|-|-|
-|LSTM|95\.5%|94\.8%|-|-|
-|Bi-LSTM|95\.46%|95%|-|-|
-|Attention Bi-LSTM|95\.68%|95\.08%|-|-|
-
 
 **Confusion matrix for multilingial BERT and attention Bi-LSTM on Hinglish English Dataset**
 
@@ -65,40 +41,6 @@ These two type of data are used to create four types of embeddings such as Word2
 
 
 **Confusion matrix for IndicBERT and attention Bi-LSTM on Hinglish English Dataset**
-
-
-
-
-
-
-
-
-
-
-
-
-**Observations**
-
-1\. Attention Bi-LSTM performed the best among all deep learning models.
-
-2\. The order of the embeddings in terms of their overall performance is IndicBERT>multilingual BERT>Word2Vec>FastText where IndicBERT is the best performer and FastText is the worst.
-
-3\. For multilingual BERT embeddings the attention Bi-LSTM model was overfit which we couldn’t rectify due to time constraint.
-
-
-
-
-
-
-
-
-
-
-
-4\. For IndicBERT embeddings we prevented the attention Bi-LSTM from being overfit
-
-by setting the value of the patience variable to 2 in the EarlyStopping funstion and the values of dropout and recurrent\_dropout as 0.3.
-
 
 
 
