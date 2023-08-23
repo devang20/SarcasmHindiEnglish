@@ -1,8 +1,8 @@
-<font size="+2">**Problem Statement**</font>
+<font size="+4">**Problem Statement**</font>
 
 In this project, we carried out sarcasm detection in Hindi-English code-mixed data using bilingual word embeddings and several deep learning techniques.
 
-<font size="+2">**Dataset**</font>
+<font size="+24">**Dataset**</font>
 
 We used two types of twitter data- unlabeled and labeled. Unlabeled tweets were used to create embeddings. Labeled tweets were labeled as either sarcastic or non-sarcastic. This data was used to train the deep learning models.
 
